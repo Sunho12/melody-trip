@@ -24,6 +24,6 @@ export {
 
 // UI Components
 export { TripCard } from './ui/TripCard';
-export { TripForm } from './ui/TripForm';
+export { TripForm, type TripFormValues } from './ui/TripForm';
 export { TripList } from './ui/TripList';
 export { DeleteConfirmModal } from './ui/DeleteConfirmModal';
