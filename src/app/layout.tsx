@@ -1,16 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Jua } from 'next/font/google';
 import './globals.css';
 import Providers from './providers';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const jua = Jua({
+  weight: '400',
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jua',
 });
 
 export const metadata: Metadata = {
@@ -29,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className="dark" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${jua.variable} font-[var(--font-jua)] antialiased`}
       >
         <Providers>{children}</Providers>
       </body>

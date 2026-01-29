@@ -3,70 +3,77 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 20%;
+    --background: 210 100% 97%;
+    --foreground: 280 20% 40%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 20%;
+    --card-foreground: 280 20% 40%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 20%;
-    --primary: 350 70% 65%;
+    --popover-foreground: 280 20% 40%;
+    --primary: 280 60% 75%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 30 60% 95%;
-    --secondary-foreground: 30 50% 30%;
-    --muted: 40 30% 96%;
-    --muted-foreground: 240 5% 50%;
-    --accent: 180 40% 92%;
-    --accent-foreground: 180 40% 30%;
-    --destructive: 0 65% 60%;
+    --secondary: 330 80% 90%;
+    --secondary-foreground: 330 50% 40%;
+    --muted: 210 60% 95%;
+    --muted-foreground: 280 15% 55%;
+    --accent: 50 95% 88%;
+    --accent-foreground: 50 50% 35%;
+    --destructive: 0 70% 75%;
     --destructive-foreground: 0 0% 100%;
-    --border: 30 20% 90%;
-    --input: 30 20% 90%;
-    --ring: 350 70% 65%;
-    --radius: 0.75rem;
-    /* Warm pastel chart colors */
-    --chart-1: 350 70% 75%;
-    --chart-2: 30 70% 75%;
-    --chart-3: 180 50% 75%;
-    --chart-4: 280 50% 80%;
-    --chart-5: 140 50% 70%;
+    --border: 280 30% 90%;
+    --input: 280 30% 90%;
+    --ring: 280 60% 75%;
+    --radius: 1rem;
+    /* Cute pastel chart colors */
+    --chart-1: 280 60% 75%;
+    --chart-2: 330 70% 80%;
+    --chart-3: 50 80% 75%;
+    --chart-4: 210 70% 80%;
+    --chart-5: 170 50% 75%;
   }
 
   .dark {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 20%;
+    --background: 210 100% 97%;
+    --foreground: 280 20% 40%;
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 20%;
+    --card-foreground: 280 20% 40%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 20%;
-    --primary: 350 70% 65%;
+    --popover-foreground: 280 20% 40%;
+    --primary: 280 60% 75%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 30 60% 95%;
-    --secondary-foreground: 30 50% 30%;
-    --muted: 40 30% 96%;
-    --muted-foreground: 240 5% 50%;
-    --accent: 180 40% 92%;
-    --accent-foreground: 180 40% 30%;
-    --destructive: 0 65% 60%;
+    --secondary: 330 80% 90%;
+    --secondary-foreground: 330 50% 40%;
+    --muted: 210 60% 95%;
+    --muted-foreground: 280 15% 55%;
+    --accent: 50 95% 88%;
+    --accent-foreground: 50 50% 35%;
+    --destructive: 0 70% 75%;
     --destructive-foreground: 0 0% 100%;
-    --border: 30 20% 90%;
-    --input: 30 20% 90%;
-    --ring: 350 70% 65%;
-    --chart-1: 350 70% 75%;
-    --chart-2: 30 70% 75%;
-    --chart-3: 180 50% 75%;
-    --chart-4: 280 50% 80%;
-    --chart-5: 140 50% 70%;
+    --border: 280 30% 90%;
+    --input: 280 30% 90%;
+    --ring: 280 60% 75%;
+    --chart-1: 280 60% 75%;
+    --chart-2: 330 70% 80%;
+    --chart-3: 50 80% 75%;
+    --chart-4: 210 70% 80%;
+    --chart-5: 170 50% 75%;
   }
 }
 
 @layer base {
   * {
     border-color: hsl(var(--border));
+    font-weight: 400 !important;
   }
   body {
-    background-color: hsl(var(--background));
+    background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 50%, #fefce8 100%);
+    background-attachment: fixed;
     color: hsl(var(--foreground));
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* 볼드 제거 */
+  b, strong, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400 !important;
   }
 }
 

@@ -15,14 +15,14 @@ export default function DashboardPage() {
     <MainLayout>
       <div className="space-y-8">
         {/* 페이지 타이틀 */}
-        <div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">대시보드</h1>
-          <p className="text-gray-500">음악과 함께한 여행의 기록을 확인하세요</p>
+        <div className="bg-gradient-to-r from-pastel-purple-100 via-pastel-pink-100 to-pastel-yellow-100 p-6 rounded-3xl shadow-lg">
+          <h1 className="text-4xl text-pastel-purple-400 mb-2">🎵 대시보드 ✨</h1>
+          <p className="text-pastel-purple-300 text-lg">음악과 함께한 여행의 기록을 확인하세요</p>
         </div>
 
         {isLoading ? (
           <div className="flex items-center justify-center py-12">
-            <Loader2 className="w-8 h-8 animate-spin text-rose-400" />
+            <Loader2 className="w-8 h-8 animate-spin text-pastel-pink-400" />
           </div>
         ) : (
           <>
@@ -31,7 +31,7 @@ export default function DashboardPage() {
 
             {/* 최근 여행 목록 */}
             <div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">최근 여행</h2>
+              <h2 className="text-2xl text-pastel-purple-400 mb-4">🌟 최근 여행</h2>
               <TripList />
             </div>
           </>

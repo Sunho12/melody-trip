@@ -47,6 +47,37 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        // 귀여운 파스텔 컬러 팔레트
+        pastel: {
+          sky: {
+            50: '#f0f9ff',
+            100: '#e0f2fe',
+            200: '#bae6fd',
+            300: '#7dd3fc',
+            400: '#38bdf8',
+          },
+          pink: {
+            50: '#fdf2f8',
+            100: '#fce7f3',
+            200: '#fbcfe8',
+            300: '#f9a8d4',
+            400: '#f472b6',
+          },
+          yellow: {
+            50: '#fefce8',
+            100: '#fef9c3',
+            200: '#fef08a',
+            300: '#fde047',
+            400: '#facc15',
+          },
+          purple: {
+            50: '#faf5ff',
+            100: '#f3e8ff',
+            200: '#e9d5ff',
+            300: '#d8b4fe',
+            400: '#c084fc',
+          },
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
