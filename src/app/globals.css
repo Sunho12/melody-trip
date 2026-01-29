@@ -63,17 +63,24 @@
   * {
     border-color: hsl(var(--border));
     font-weight: 400 !important;
+    font-family: var(--font-jua), sans-serif !important;
   }
   body {
     background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 50%, #fefce8 100%);
     background-attachment: fixed;
     color: hsl(var(--foreground));
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-jua), sans-serif !important;
   }
 
   /* 볼드 제거 */
   b, strong, h1, h2, h3, h4, h5, h6 {
     font-weight: 400 !important;
+  }
+
+  /* 모든 텍스트 요소에 Jua 폰트 적용 */
+  input, textarea, button, select, div, p, span, a, li, label {
+    font-family: var(--font-jua), sans-serif !important;
   }
 }
 

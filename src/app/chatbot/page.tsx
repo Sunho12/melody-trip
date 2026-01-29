@@ -8,20 +8,13 @@ import { useTripsQuery } from '@/features/trip';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-import { Jua } from 'next/font/google';
-
-const jua = Jua({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function ChatbotPage() {
   const { data: trips } = useTripsQuery();
 
   return (
     <MainLayout>
-      <div className={`max-w-3xl mx-auto space-y-6 ${jua.className}`}>
+      <div className="max-w-3xl mx-auto space-y-6">
         {/* 헤더 */}
         <div className="flex items-center gap-4 bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 p-4 rounded-2xl shadow-md">
           <Link href="/">
