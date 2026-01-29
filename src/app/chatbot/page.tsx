@@ -16,19 +16,19 @@ export default function ChatbotPage() {
     <MainLayout>
       <div className="max-w-3xl mx-auto space-y-6">
         {/* 헤더 */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 p-4 rounded-2xl shadow-md">
           <Link href="/">
-            <Button variant="ghost" size="icon" className="text-gray-600 hover:bg-gray-100">
+            <Button variant="ghost" size="icon" className="text-purple-600 hover:bg-white/50 rounded-full">
               <ArrowLeft className="w-5 h-5" />
             </Button>
           </Link>
           <div className="flex-1">
-            <h1 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-rose-600 bg-clip-text text-transparent flex items-center gap-2">
               <Sparkles className="w-6 h-6 text-rose-400" />
-              음악 기반 여행 챗봇
+              음악 기반 여행 챗봇 ✨
             </h1>
-            <p className="text-gray-500">
-              좋아하는 음악을 알려주시면 어울리는 여행지를 추천해 드려요
+            <p className="text-purple-600 text-sm mt-1">
+              🎵 좋아하는 음악을 알려주시면 어울리는 여행지를 추천해 드려요!
             </p>
           </div>
         </div>
