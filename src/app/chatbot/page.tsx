@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { MainLayout } from '@/widgets/layout';
 import { ChatContainer } from '@/features/chatbot';
 import { useTripsQuery } from '@/features/trip';

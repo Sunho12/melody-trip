@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { MainLayout } from '@/widgets/layout';
 import { WorldMap, MapStats, GenreLegend } from '@/features/map';
 import { useTripsQuery, useGenresQuery } from '@/features/trip';

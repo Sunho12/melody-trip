@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useRouter } from 'next/navigation';
 import { MainLayout } from '@/widgets/layout';
 import { TripForm, useCreateTripMutation, type TripFormValues } from '@/features/trip';

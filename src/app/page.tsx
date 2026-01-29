@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { MainLayout } from '@/widgets/layout';
 import { TripList } from '@/features/trip';
 import { StatsSection } from '@/features/statistics';
