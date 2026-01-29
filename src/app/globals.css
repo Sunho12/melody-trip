@@ -195,7 +195,9 @@
 }
 
 /* Airplane Cursor Styles */
-* {
+html,
+body,
+body * {
   cursor: none !important;
 }
 
